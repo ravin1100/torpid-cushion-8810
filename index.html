@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Online Shopping Site in India - Upto 60% Off On Mobiles, Electronics &
+      Fashion at Tata CLiQ
+    </title>
+    <link rel="icon" href="./go_trendy_logo.png" />
+    <script
+      src="https://kit.fontawesome.com/25d29e9310.js"
+      crossorigin="anonymous"
+    ></script>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+      }
+      #nav {
+        height: 100px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #2c2c2c;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      #nav a {
+        color: white;
+        font-size: 13px;
+        font-weight: bold;
+        text-decoration: none;
+      }
+      #logo-holder {
+        margin-left: 100px;
+      }
+      #logo-holder img {
+        width: 80px;
+      }
+      #right-nav-part {
+        width: 75%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+      }
+      #top-nav {
+        height: 40px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        /* border: 1px solid red; */
+        background-color: #212121;
+      }
+      #top-nav > div:nth-child(1) {
+        margin-left: 30px;
+      }
+      #top-nav > div:nth-child(2) {
+        width: 50%;
+        /* margin: auto; */
+        /* border: 1px solid green; */
+        display: flex;
+        justify-content: space-between;
+        margin-right: 100px;
+      }
+      #bottom-nav {
+        display: flex;
+        height: 60px;
+        justify-content: space-around;
+        align-items: center;
+      }
+      #bottom-nav input {
+        width: 50%;
+        height: 40px;
+        background-color: #616161;
+        border-radius: 5px;
+        border: none;
+        padding: 0px 10px;
+      }
+      ::placeholder {
+        color: #acacb4;
+        font-weight: bold;
+      }
+      .dropdown {
+        position: relative;
+        display: inline-block;
+      }
+      .dropdown-content {
+        display: none;
+        position: absolute;
+      }
+      .dropdown-content a {
+        text-decoration: none;
+        display: block;
+      }
+      .dropdown:hover .dropdown-content {
+        display: block;
+      }
+      .dropdown:hover .drop-element {
+        background-color: white;
+        color: black;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="nav">
+      <div id="logo-holder">
+        <img src="./go_trendy_logo_prev_ui.png" alt="" />
+      </div>
+      <div id="right-nav-part">
+        <div id="top-nav">
+          <div>
+            <a href="">Tata CLiQ Luxury</a>
+          </div>
+          <div>
+            <a href="">CLiQ Cash</a>
+            <a href="">Gift Card</a>
+            <a href="">CLiQ Care</a>
+            <a href="">Track Orders</a>
+            <a href="">Sign in/Sign Up</a>
+          </div>
+        </div>
+        <div id="bottom-nav">
+          <div class="dropdown">
+            <a href="" class="drop-element">Categories</a>
+            <div class="dropdown-content">
+              <a href="#">Women's Fashion</a>
+              <a href="#">Men's Fashion</a>
+              <a href="#">Kid's Fashion</a>
+              <a href="#">Home & Kitchen</a>
+              <a href="#">Beauty</a>
+              <a href="#">Gadgets</a>
+              <a href="#">Jewellery</a>
+              <a href="#">Accessories</a>
+            </div>
+          </div>
+
+          <a href="">Brands</a>
+          <input type="text" placeholder="Search for Categories" />
+          <div class="fa-regular fa-heart" style="color: white"></div>
+          <div class="fa-solid fa-bag-shopping" style="color: white"></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
