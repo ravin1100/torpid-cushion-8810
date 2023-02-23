@@ -8,104 +8,18 @@
       Online Shopping Site in India - Upto 60% Off On Mobiles, Electronics &
       Fashion at Tata CLiQ
     </title>
-    <link rel="icon" href="./go_trendy_logo.png" />
+    <link rel="icon" href="./images/go_trendy_logo.png" />
     <script
       src="https://kit.fontawesome.com/25d29e9310.js"
       crossorigin="anonymous"
     ></script>
-    <style>
-      body {
-        margin: 0;
-        padding: 0;
-      }
-      #nav {
-        height: 100px;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        background-color: #2c2c2c;
-        font-family: Arial, Helvetica, sans-serif;
-      }
-      #nav a {
-        color: white;
-        font-size: 13px;
-        font-weight: bold;
-        text-decoration: none;
-      }
-      #logo-holder {
-        margin-left: 100px;
-      }
-      #logo-holder img {
-        width: 80px;
-      }
-      #right-nav-part {
-        width: 75%;
-        height: 100%;
-        display: flex;
-        flex-direction: column;
-      }
-      #top-nav {
-        height: 40px;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        /* border: 1px solid red; */
-        background-color: #212121;
-      }
-      #top-nav > div:nth-child(1) {
-        margin-left: 30px;
-      }
-      #top-nav > div:nth-child(2) {
-        width: 50%;
-        /* margin: auto; */
-        /* border: 1px solid green; */
-        display: flex;
-        justify-content: space-between;
-        margin-right: 100px;
-      }
-      #bottom-nav {
-        display: flex;
-        height: 60px;
-        justify-content: space-around;
-        align-items: center;
-      }
-      #bottom-nav input {
-        width: 50%;
-        height: 40px;
-        background-color: #616161;
-        border-radius: 5px;
-        border: none;
-        padding: 0px 10px;
-      }
-      ::placeholder {
-        color: #acacb4;
-        font-weight: bold;
-      }
-      .dropdown {
-        position: relative;
-        display: inline-block;
-      }
-      .dropdown-content {
-        display: none;
-        position: absolute;
-      }
-      .dropdown-content a {
-        text-decoration: none;
-        display: block;
-      }
-      .dropdown:hover .dropdown-content {
-        display: block;
-      }
-      .dropdown:hover .drop-element {
-        background-color: white;
-        color: black;
-      }
-    </style>
+    <link rel="stylesheet" href="./index.css">
   </head>
   <body>
+    <!-- navbar container -->
     <div id="nav">
       <div id="logo-holder">
-        <img src="./go_trendy_logo_prev_ui.png" alt="" />
+        <img src="./images/go_trendy_logo_prev_ui.png" alt="" />
       </div>
       <div id="right-nav-part">
         <div id="top-nav">
@@ -140,6 +54,216 @@
           <div class="fa-regular fa-heart" style="color: white"></div>
           <div class="fa-solid fa-bag-shopping" style="color: white"></div>
         </div>
+      </div>
+    </div>
+
+    <!-- slideshow-container -->
+    <div id="slideshow-container">
+      <div class="mySlide fade">
+        <img src="./images/slideshow1.gif" alt="" />
+      <!-- </div>
+      <div class="mySlide fade">
+        <img src="./images/slideshow2.jpg" alt="" />
+      </div>
+      <div class="mySlide fade">
+        <img src="./images/slideshow3.jpg" alt="" />
+      </div>
+      <div class="mySlide fade">
+        <img src="./images/slideshow4.jpg" alt="" />
+      </div>
+      <div class="mySlide fade">
+        <img src="./images/slideshow5.jpg" alt="" />
+      </div> -->
+      <!-- previous and next buttons -->
+      <a id="previous" class="fa-solid fa-angle-left"></a>
+      <a id="next" class="fa-solid fa-angle-right"></a>
+    </div>
+    <!-- small circles showing slides -->
+    <div id="dots-container">
+      <span class="dot"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+    </div>
+
+    <!-- Quick Link Section -->
+
+    <div id="quick-link-section">
+      <div class="card">
+        <img src="https://assets.tatacliq.com/medias/sys_master/images/46052000595998.jpg" alt="">
+      </div>
+      <div class="card">
+        <img src="https://assets.tatacliq.com/medias/sys_master/images/46012802367518.jpg" alt="">
+      </div>
+      <div class="card">
+        <img src="https://assets.tatacliq.com/medias/sys_master/images/46012802433054.jpg" alt="">
+      </div>
+      <div class="card">
+        <img src="https://assets.tatacliq.com/medias/sys_master/images/46012802498590.jpg" alt="">
+      </div>
+      <div class="card">
+        <img src="https://assets.tatacliq.com/medias/sys_master/images/46012802564126.jpg" alt="">
+      </div> 
+      <div class="card">
+        <img src="https://assets.tatacliq.com/medias/sys_master/images/46012802629662.jpg" alt="">
+      </div> 
+      <div class="card">
+        <img src="https://assets.tatacliq.com/medias/sys_master/images/46012802695198.jpg" alt="">
+      </div>
+      <div class="card">
+        <img src="https://assets.tatacliq.com/medias/sys_master/images/46012802760734.jpg" alt="">
+      </div>
+      <div class="card">
+        <img src="https://assets.tatacliq.com/medias/sys_master/images/46012802826270.jpg" alt="">
+      </div>
+      <div class="card">
+        <img src="https://assets.tatacliq.com/medias/sys_master/images/46012802891806.jpg" alt="">
+      </div>   
+    </div>   
+
+    <!-- Bank Banner Section -->  
+
+    <div id="bank-banner-container">
+      <div class="banner">
+        <img src="https://assets.tatacliq.com/medias/sys_master/images/45464314347550.jpg" alt="">
+      </div>
+      <div class="banner">
+        <img src="https://assets.tatacliq.com/medias/sys_master/images/45433290981406.jpg" alt="">
+      </div>
+    </div>
+
+    <!-- Free shipping section -->
+
+    <div id="free-shipping">
+      <div>
+        <h1 class="h-text">FREE SHIPPING</h1>
+        <h3 class="desc-text">Available on all orders for <br> a limited period only</h3>
+      </div>
+    </div>
+
+    <!-- deals wheel -->
+
+    <div class="mid-part-container">
+      <div class="mid-part">
+        <h1 class="heading-text">DEALS WHEEL</h1>
+        <h3 class="desc-text">Grab these before they're gone</h3>
+      </div> 
+    </div>
+    <div class="deal-container">
+      <div class="deal">
+        <img src="https://assets.tatacliq.com/medias/sys_master/images/46073359335454.jpg" alt="">
+      </div>
+      <div class="deal">
+        <img src="https://assets.tatacliq.com/medias/sys_master/images/46080200704030.jpg" alt="">
+      </div>
+      <div class="deal">
+        <img src="https://assets.tatacliq.com/medias/sys_master/images/46080200769566.jpg" alt="">
+      </div>
+      <div class="deal">
+        <img src="https://assets.tatacliq.com/medias/sys_master/images/46093581746206.jpg" alt="">
+      </div>
+    </div>
+
+    <!-- featured brand -->
+
+    <div class="mid-part-container">
+      <div class="mid-part">
+        <h1 class="heading-text">FEATURED BRANDS</h1>
+        <h3 class="desc-text">Celebrating the brands in spotlight</h3>
+      </div> 
+    </div>
+    <div class="deal-container">
+      <div class="deal">
+        <img src="https://assets.tatacliq.com/medias/sys_master/images/46080200900638.jpg" alt="">
+      </div>
+      <div class="deal">
+        <img src="https://assets.tatacliq.com/medias/sys_master/images/46080200966174.jpg" alt="">
+      </div>
+      <div class="deal">
+        <img src="https://assets.tatacliq.com/medias/sys_master/images/46080201031710.jpg" alt="">
+      </div>
+      <div class="deal">
+        <img src="https://assets.tatacliq.com/medias/sys_master/images/46080201162782.jpg" alt="">
+      </div>
+    </div>
+
+    <!-- SS 23 Seleqt -->
+
+    <div class="mid-part-container">
+      <div class="mid-part">
+        <h1 class="heading-text">SS '23 SELEQT</h1>
+        <h3 class="desc-text">New season, new collections</h3>
+      </div> 
+    </div>
+    <div class="deal-container">
+      <div class="deal">
+        <img src="https://assets.tatacliq.com/medias/sys_master/images/46080807895070.jpg" alt="">
+      </div>
+      <div class="deal">
+        <img src="https://assets.tatacliq.com/medias/sys_master/images/46093579026462.jpg" alt="">
+      </div>
+      <div class="deal">
+        <img src="https://assets.tatacliq.com/medias/sys_master/images/46080808091678.jpg" alt="">
+      </div>
+      <div class="deal">
+        <img src="https://assets.tatacliq.com/medias/sys_master/images/46080808288286.jpg" alt="">
+      </div>
+    </div>
+
+    <!-- Categories to browse -->
+
+    <div class="mid-part-container">
+      <div class="mid-part">
+        <h1 class="heading-text">CATEGORIES TO BROWSE</h1>
+        <h3 class="desc-text">There's something here for everyone</h3>
+      </div> 
+    </div>
+    <div class="deal-container">
+      <div class="deal">
+        <img src="https://assets.tatacliq.com/medias/sys_master/images/45717772730398.jpg" alt="">
+      </div>
+      <div class="deal">
+        <img src="https://assets.tatacliq.com/medias/sys_master/images/45717772795934.jpg" alt="">
+      </div>
+      <div class="deal">
+        <img src="https://assets.tatacliq.com/medias/sys_master/images/45717773647902.jpg" alt="">
+      </div>
+      <div class="deal">
+        <img src="https://assets.tatacliq.com/medias/sys_master/images/45717773713438.jpg" alt="">
+      </div>
+    </div>
+
+    <!-- new on cliq -->
+
+    <div class="mid-part-container">
+      <div class="mid-part">
+        <h1 class="heading-text">NEW ON CLIQ</h1>
+        <h3 class="desc-text">Fresh piQs to choose from</h3>
+      </div> 
+    </div>
+    <div class="deal-container">
+      <div class="deal">
+        <img src="https://assets.tatacliq.com/medias/sys_master/images/46080200835102.jpg" alt="">
+      </div>
+      <div class="deal">
+        <img src="https://assets.tatacliq.com/medias/sys_master/images/46093582794782.jpg" alt="">
+      </div>
+      <div class="deal">
+        <img src="https://assets.tatacliq.com/medias/sys_master/images/46073350881310.jpg" alt="">
+      </div>
+      <div class="deal">
+        <img src="https://assets.tatacliq.com/medias/sys_master/images/46047034703902.jpg" alt="">
+      </div>
+    </div>
+  
+    <!-- footer -->
+    <div id="footer-top">
+      <div>
+        <div>Tata Trust</div>
+      <div>QuiQ PiQ</div>
+      <div>Authentic Brands</div>
+      <div>Easy Returns</div>
       </div>
     </div>
   </body>
