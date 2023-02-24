@@ -69,6 +69,65 @@ body {
   color: #acacb4;
   font-weight: bold;
 }
+
+/* login popup */
+
+.popup {
+  border: 1px solid red;
+  position: absolute;
+  top: -150%;
+  left: 50%;
+  opacity: 0;
+  transform: translate(-50%, -50%);
+  width: 380px;
+  padding: 20px 30px;
+  background: #fff;
+  border-radius: 20px;
+  font-family: sans-serif, "poppins";
+}
+.popup.active {
+  top: 50%;
+  opacity: 1;
+}
+.popup .close-btn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 15px;
+  height: 15px;
+  background: #888;
+  color: #eee;
+  text-align: center;
+  line-height: 15px;
+  border-radius: 15px;
+  cursor: pointer;
+}
+.popup .form h1,
+.popup .form h4 {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.popup .form .form-element input[type="number"] {
+  margin-top: 5px;
+  width: 100%;
+  padding: 10px;
+  outline: none;
+  border-radius: 5px;
+}
+.popup .form .form-element button {
+  width: 100%;
+  height: 40px;
+  margin-top: 20px;
+  border: none;
+  outline: none;
+  font-size: 15px;
+  background-color: #ef5350;
+  color: white;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
 .dropdown {
   position: relative;
   display: inline-block;
@@ -213,4 +272,65 @@ body {
   align-items: center;
   font-weight: 500;
   font-size: 15px;
+}
+
+#footer-mid {
+  /* border: 1px solid green; */
+  box-sizing: border-box;
+  /* text-transform: capitalize; */
+  background-color: #ffffff;
+  padding: 50px 50px;
+  font-family: sans-serif, "poppins";
+  /* text-align: center; */
+}
+.container {
+  /* max-width: 1070px; */
+  width: 85%;
+  margin: auto;
+  /* border: 1px solid violet; */
+}
+.row {
+  display: flex;
+}
+.footer-col {
+  /* border: 1px solid red; */
+  width: 18%;
+  padding: 0 15px;
+}
+#last-col {
+  width: 50%;
+  /* border: 4px solid black; */
+}
+#last-col a {
+  font-size: 11px;
+  line-height: 1.6;
+  opacity: 0.9;
+  letter-spacing: 0.3px;
+}
+
+.footer-col h4 {
+  font-size: 12px;
+  font-weight: 600;
+  position: relative;
+  opacity: 0.9;
+}
+.footer-col ul {
+  list-style: none;
+  /* border: 1px solid red; */
+  /* margin-left: 0px; */
+}
+.footer-col ul li {
+  font-size: 12px;
+  display: block;
+  font-weight: 100;
+  line-height: 2;
+}
+.footer-col ul li a {
+  text-decoration: none;
+  margin-left: 0;
+  position: relative;
+  left: -40px;
+  line-height: 1.4;
+  color: black;
+  opacity: 0.8;
 }
