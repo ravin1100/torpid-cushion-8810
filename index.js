@@ -30,3 +30,23 @@ closeBtn.addEventListener("click", (e) => {
   e.preventDefault();
   document.querySelector(".popup").classList.remove("active");
 });
+
+let continueBtn = document.getElementById("success");
+let InpMobileEl = document.getElementById("mobile-number");
+function checkMobileNumber(num) {
+  if (num.toString().length < 10) return false;
+  else return true;
+}
+
+let loginBtn = document.getElementById("popup-access");
+let loginCont = document.getElementById("login-cont");
+continueBtn.addEventListener("click", (e) => {
+  console.log("ok");
+  if (checkMobileNumber(+InpMobileEl.value)) {
+    loginCont.innerHTML = "";
+    // loginBtn.innerText = "";
+    document.querySelector(".popup").classList.remove("active");
+  } else {
+    alert("Wrong Input");
+  }
+});
